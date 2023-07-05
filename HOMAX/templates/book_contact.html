@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HKH Studio - Book & Contact</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body class="book-contact-bg">
+  <!-- Navigation -->
+  <nav class="nav-container">
+    <ul class="nav">
+      <img src="{% static 'My_Logo.png' %}" width="100" height="100" id="logo" alt="Logo image" style="left: 20px"/>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'gallery' %}">Gallery</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'book_contact' %}">Book & Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Three sections -->
+  <div class="sections-container">
+    <div class="section">
+      <h1>Wedding Photography</h1>
+      <p>Congratulations on your upcoming wedding! We understand that your wedding day is a once-in-a-lifetime event filled with beautiful moments and emotions that you'll want to cherish forever. That's why we're delighted to offer our professional wedding photography services to capture every special detail and create a timeless collection of memories for you and your loved ones.</p>
+    </div>
+    <div class="section">
+      <h1>Personal Photography</h1>
+      <p>With a blend of creativity, professionalism, and attention to detail, we strive to provide an exceptional photography experience that reflects your individuality. We believe in building a connection with our clients, understanding your desires and expectations, and translating them into captivating images that you will cherish for years to come.</p>
+    </div>
+    <div class="section">
+      <h1>Business Photography</h1>
+      <p>High-quality imagery plays a crucial role in capturing attention, building brand identity, and effectively communicating your message to your target audience. That's why we're excited to offer our professional business photography services to help you showcase your products, services, and team in the best light possible.</p>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <main>
+    <div class="booking">
+      <h2>Book your session <br> We will contact you as soon as possible</h2>
+      <form>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        <label for="family-name">Family Name:</label>
+        <input type="text" id="family-name" name="family-name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Homayoun Khanmohammadi</p>
+      <p>Email: homayoun@gmail.com</p>
+      <p>Address: Stockholm, Sweden</p>
+      <p>Phone: 123456789</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.twitter.com/">Twitter</a>
+      </div>
+    </div>
+  </main>
+  <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>

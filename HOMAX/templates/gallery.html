@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HKH Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <link rel="stylesheet" href="{% static 'gallery.css' %}">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav-container">
+    <ul class="nav">
+      <img src="{% static 'My_Logo.png' %}" width="100" height="100" id="logo" alt="Logo image" style="left: 20px"/>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'gallery' %}">Gallery</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'book_contact' %}">Book & Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Gallery page -->
+  <div class="carousel-container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+     
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'HKH1.JPG' %}">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH2.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH3.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH4.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH5.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH6.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH7.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH8.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH9.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH10.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH11.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH12.JPG' %}" >
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'HKH13.JPG' %}" >
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script src="{% static 'gallery.js' %}"></script>
+  
+</body>
+</html>

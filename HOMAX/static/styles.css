@@ -1,0 +1,252 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333;
+  
+}
+
+/* Navigation */
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+/* Home page */
+.cover-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+ 
+}
+
+.cover-text {
+  position: absolute;
+  top: 38%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.nav li {
+  margin-right: 10px;
+}
+
+.nav a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav .active {
+  font-weight: bold;
+  background-color: #333;
+}
+
+/* About page */
+.about-bg {
+  background-color: rgb(206, 206, 206);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-image {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100vh; 
+  object-fit: cover; 
+  z-index: -1; 
+}
+.about h2 {
+
+  font-family: Copperplate, Papyrus, fantasy ;
+  color: white;
+  margin: 100px;
+}
+.about p {
+  font-family: Copperplate, Papyrus, fantasy ;
+  border: 2px solid #ffffff; 
+  padding: 35px; 
+  margin: 10px auto; 
+  box-sizing: border-box; 
+  width: 100%; 
+  max-width: 500px; 
+  display: block;
+  border-radius: 4%;
+  color: white;
+}
+
+/* Book & Contact page */
+.book-contact-bg {
+  background-color: rgb(206, 206, 206);
+}
+
+
+.sections-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.section {
+  border: 2px solid #000;
+  padding: 15px;
+  box-sizing: border-box;
+  width: calc(100% / 3 - 20px);
+}
+
+@media screen and (max-width: 768px) {
+  .sections-container {
+    flex-direction: column;
+  }
+
+  .section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.booking,
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label,
+input {
+  margin: 5px;
+}
+
+button[type="submit"] {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: #000000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #333;
+}
+
+.booking {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #848383;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.booking h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #070707;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.booking form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.booking label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.booking input {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.booking button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #333;
+  color: rgb(124, 122, 122);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.booking button:hover {
+  background-color: #444;
+}
+
+.section h1 {
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.section p {
+  font-family: Copperplate, Papyrus, fantasy;
+}

@@ -1,0 +1,40 @@
+# Ignore directories
+venv/
+node_modules/
+dist/
+
+# Ignore specific files
+*.log
+secret.txt
+
+# Ignore files with specific extensions
+*.pyc
+*.swp
+*.db
+
+# Ignore temporary files or backups
+*.tmp
+*.bak
+
+# Ignore IDE or editor-specific files
+.vscode/
+.idea/
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore system files
+Thumbs.db
+
+# Ignore compiled files
+*.exe
+*.dll
+
+# Ignore sensitive or private files
+credentials.txt
+
+# Ignore generated documentation
+docs/
+
+# Ignore build artifacts
+build/
